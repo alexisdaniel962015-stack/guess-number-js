@@ -28,9 +28,10 @@ console.log(maxIntentos);
 // --- Entrada del usuario ---
 let nombreUsuario = prompt('¿Cómo te llamas?');
 let edadUsuario = prompt('¿Cuántos años tienes?');
+let  ciudadUsuario = prompt('¿En qué ciudad vives?');
 
 // --- Salida al usuario ---
-alert('Hola ' + nombreUsuario + ', tienes ' + edadUsuario + ' años.');
+alert('Hola ' + nombreUsuario + ', tienes ' + edadUsuario + ' años y vives en ' + ciudadUsuario + '.');
 
 // --- Verifica en consola ---
 console.log('Nombre:', nombreUsuario);
@@ -57,13 +58,14 @@ let saludo1 = 'Hola ' + nombreUsuario + ', tienes ' + edadUsuario + ' años.';
 console.log(saludo1);
 
 // Forma 2: Template literals con `` (backticks)
-let saludo2 = `Hola ${nombreUsuario}, tienes ${edadUsuario} años.`;
+let saludo2 = `Hola ${nombreUsuario}, tienes ${edadUsuario} años y vives en ${ciudadUsuario}.`;
 console.log(saludo2);
 
 // --- Calculadora de edad ---
 let anioActual = 2026;
 let anioNacimiento = anioActual - Number(edadUsuario);
 
-console.log(`Si naciste en ${anioNacimiento}, entonces en el año ${anioActual} tendrás ${edadUsuario} años.`);
+console.log(`Si naciste en ${anioNacimiento}, entonces en el año ${anioActual} tendrás ${Number(edadUsuario)} años.`);
+
 
 
