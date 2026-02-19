@@ -37,3 +37,33 @@ console.log('Nombre:', nombreUsuario);
 console.log('Edad:', edadUsuario);
 console.log('Tipo de edad:', typeof edadUsuario);
 
+// --- Operadores aritméticos ---
+let a = 20;
+let b = 7;
+
+console.log('Suma:', a + b);        // 27
+console.log('Resta:', a - b);       // 13
+console.log('Multiplicación:', a * b); // 140
+console.log('División:', a / b);     // 2.857...
+console.log('Módulo:', a % b);       // 6 (el residuo)
+
+// --- ¿Qué resultado esperas? ---
+console.log('5' + 3);    // ¿53 o 8?
+console.log(5 + 3);      // ¿53 o 8?
+console.log('5' - 3);    // ¿Qué pasa aquí?
+
+// Forma 1: Concatenación con +
+let saludo1 = 'Hola ' + nombreUsuario + ', tienes ' + edadUsuario + ' años.';
+console.log(saludo1);
+
+// Forma 2: Template literals con `` (backticks)
+let saludo2 = `Hola ${nombreUsuario}, tienes ${edadUsuario} años.`;
+console.log(saludo2);
+
+// --- Calculadora de edad ---
+let anioActual = 2026;
+let anioNacimiento = anioActual - Number(edadUsuario);
+
+console.log(`Si naciste en ${anioNacimiento}, entonces en el año ${anioActual} tendrás ${edadUsuario} años.`);
+
+
